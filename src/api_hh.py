@@ -5,7 +5,7 @@ class HH:
     """Класс для работы с API HeadHunter."""
 
     def __init__(self):
-        """ "Конструктор класса."""
+        """Конструктор класса."""
         self.__url = "https://api.hh.ru/"
         self._headers = {"User-Agent": "HH-User-Agent"}
         self._params = {"per_page": 100, "page": 0, "only_with_salary": True}
