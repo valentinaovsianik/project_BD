@@ -11,7 +11,7 @@ class DBManager:
     def __init__(self):
         """Инициализирует подключение к базе данных."""
         try:
-            params = config()
+            params = config()  # Получение параметров из файла конфигурации
             self.conn = psycopg2.connect(**params)
             self.cursor = self.conn.cursor(cursor_factory=DictCursor)
             print("Подключение к базе данных успешно")
